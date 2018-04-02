@@ -22,6 +22,5 @@ This repo is a collection of core Computer Science Data Structures and their tim
 * Java
 * Python
 * Swift
-* C++
 
 
