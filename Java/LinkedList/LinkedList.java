@@ -110,30 +110,31 @@ class LinkedList<AnyType>{
          counter++;
        }
      } catch(NullPointerException e){
-       System.out.println("Error : Null elemnt found");
+       System.out.println("Error : Null Pointer found");
      }
      return counter;
    }
 
    /*
-   Function to delete an elemnt from the List
+   Function to delete an elemnt from the List at a given position
    Time Complexity :
-   @param data : The element to be removed
+   @param data : The item to be deletd from the list
    */
 
    public void delete(AnyType data){
      if(this.isEmpty()){
        System.out.println("The List is Empty.");
+       System.exit(0);
      }
-     Node<AnyType> temp = this.head;
-     while(temp.next != null){
-       if(temp.data == data){
-            temp.next = this.head;
-           temp = null;
-       }else{
-           temp = temp.next;
-       }
+
+     try{
+       Node<AnyType> temp = this.head;
+
+
+     }catch (NullPointerException e){
+       System.out.println("Error : Null Pointer found")
      }
+
    }
 
    /*

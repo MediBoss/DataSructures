@@ -10,9 +10,12 @@ public class LinkedListTester{
       classOneStudents.append("Yves Songolo");
       classOneStudents.append("Maceline Ambroise");
 
-      System.out.println("Is the List Empty : " + classOneStudents.isEmpty());
       System.out.println("The Length is : " + classOneStudents.length());
       classOneStudents.print();
+      classOneStudents.delete("Yves Songolo");
+      System.out.println("The Length is : " + classOneStudents.length());
+      classOneStudents.print();
+
 
   }
 }
