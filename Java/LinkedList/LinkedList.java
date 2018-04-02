@@ -64,7 +64,6 @@ class LinkedList<AnyType>{
     new_node.next = this.head;
     head = new_node;
    }
-
    /*
    This funcion parses through each node and prints the element
    Time Complexity :
@@ -74,13 +73,18 @@ class LinkedList<AnyType>{
 
      if(this.isEmpty()){
        System.out.println("The list is Empty.");
+       System.exit(0); // terminates/exits out the program
      }
      try{
 
        Node<AnyType> temp = this.head;
-       while(temp.next != null){
-         temp = temp.next;
+       while(true){
          System.out.println(temp.data);
+          if(temp.next != null){
+            temp = temp.next;
+          }else{
+            break;
+          }
        }
      } catch (NullPointerException e){
        System.out.println("Error Found : Null value");

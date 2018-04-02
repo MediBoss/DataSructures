@@ -13,11 +13,6 @@ public class LinkedListTester{
       System.out.println("Is the List Empty : " + classOneStudents.isEmpty());
       System.out.println("The Length is : " + classOneStudents.length());
       classOneStudents.print();
-      classOneStudents.delete("Yves Songolo");
-      classOneStudents.replace("Patrick Fortune","Medi Assumani");
-      System.out.println("The Length is now : " + classOneStudents.length());
-      classOneStudents.print();
-
 
   }
 }
