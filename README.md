@@ -9,7 +9,7 @@ This repo is a collection of core Computer Science Data Structures and their tim
 
 ### Core Data Structures
 
-* <a href = "<a href = "https://github.com/MediBoss/DataSructures/tree/master/Java/LinkedList">Array</a>
+* <a href = "https://github.com/MediBoss/DataSructures/tree/master/Java/LinkedList">Array</a>
 * List
 * <a href = "https://github.com/MediBoss/DataSructures/tree/master/Java/LinkedList"> Singly Linked List</a>
 * Doubly LinkedList
