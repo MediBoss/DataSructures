@@ -3,7 +3,7 @@
 #### Programmer : Medi W. Assumani
 ## Overview : 
 </br>
-This repo is a collection of core Computer Science Data Structures and their time complexities to sharpen my critical thinking skills, implementing them from scratch, and  as well as knowing how to apply them in real world problems. I implement them using languages Java and Python.The main purpose of this repo is to study and practice.
+This repo is a collection of core Computer Science Data Structures and their time complexities to sharpen my critical thinking skills, implementing them from scratch, and  as well as knowing how to apply them in real world problems.The main purpose of this repo is to study and practice. This is a growing Repository, I'm continously working on it.
 
 ## Contents : </br>
 
