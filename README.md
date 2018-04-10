@@ -15,7 +15,10 @@ This repo is a collection of core Computer Science Data Structures and their tim
 * Doubly LinkedList
 * Stacks
 * Queus
-* Trees
+* Hash Tables
+* Map/Dictionary
+* Sets
+* Tree Transversal
 
 ## Languages Used : 
 
