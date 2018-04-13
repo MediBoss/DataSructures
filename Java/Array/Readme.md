@@ -1,8 +1,11 @@
 # Array
 
-In Computer Science, an Array is a linear data structures that can store a list of data in a successive order. It is the most likely the first data structure that one deals with when learning a new langueage. </br>
+In Computer Science, an Array is a linear data structures that can store a list in a successive order where data can be accessed directly. It is most likely the first data structure that one deals with when learning a new language. </br>
 
 ### Pros of Array </br> 
+
+* Can store a wide range of data in collection
+* Can Acc
 
 ### Cons of Array
 
