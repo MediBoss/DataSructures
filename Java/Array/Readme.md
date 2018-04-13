@@ -5,9 +5,13 @@ In Computer Science, an Array is a linear data structures that can store a list 
 ### Pros of Array </br> 
 
 * Can store a wide range of data in collection
-* Can Acc
+* Easier to use and access data
+* Faster access to the elements
 
 ### Cons of Array
+
+* Fixed size - Can only be sized once
+* Deletion of elemensts can be complex
 
 
 
