@@ -129,6 +129,7 @@ class LinkedList<AnyType>{
 
      try{
        Node<AnyType> temp = this.head;
+       while()
 
 
      }catch (NullPointerException e){
