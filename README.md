@@ -1,5 +1,3 @@
-<a href = "https://jupitervidya.com/wp-content/uploads/2014/02/data-structures-training-bangalore-jupiter-vidya.jpg" width = 50 height = 50></a>
-
 
 # Data Structures </br>
 
