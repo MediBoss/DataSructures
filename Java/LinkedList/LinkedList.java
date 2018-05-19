@@ -138,8 +138,9 @@ class LinkedList<AnyType>{
          prev = temp;
          temp = temp.next;
        }
-
-
+              // if key is not found in linked list
+        if (temp == null) return;
+        prev.next = temp.next; // unlinks the node from the linked list
 
      }catch (NullPointerException e){
        System.out.println("Error : Null Pointer found")
