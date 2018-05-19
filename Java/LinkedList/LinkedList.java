@@ -46,7 +46,6 @@ class LinkedList<AnyType>{
      if (this.isEmpty()) {
        this.prepend(data);
        return;
-
      }
      Node<AnyType> currentNode = this.head;
      while (currentNode.next != null){
@@ -121,15 +120,25 @@ class LinkedList<AnyType>{
    @param data : The item to be deletd from the list
    */
 
-   public void delete(AnyType data){
+   public void delete(AnyType key){
+      //checks if the list is empty and exits out if it is
      if(this.isEmpty()){
        System.out.println("The List is Empty.");
        System.exit(0);
      }
 
      try{
-       Node<AnyType> temp = this.head;
-       while()
+       Node<AnyType> temp = this.head, prev = null;
+        // if the current node's data contains the key
+       if(temp != null && temp.data == key){
+         head = temp.next;
+         return;
+       }
+       while(temp != null && temp.data != key){
+         prev = temp;
+         temp = temp.next;
+       }
+
 
 
      }catch (NullPointerException e){
