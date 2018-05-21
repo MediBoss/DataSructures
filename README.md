@@ -14,7 +14,7 @@ This repo is a collection of core Computer Science Data Structures and their tim
 * <a href = "https://github.com/MediBoss/DataSructures/tree/master/Java/Array">Array</a>
 * <a href = "https://github.com/MediBoss/DataSructures/tree/master/Java/List">List</a>
 * <a href = "https://github.com/MediBoss/DataSructures/tree/master/Java/LinkedList"> Singly Linked List</a>
-* Doubly LinkedList
+* <a href = "https://github.com/MediBoss/DataSructures/blob/master/doubly_linked_list.py"> Doubly Linked List</a>
 * Stacks
 * Queus
 * Hash Tables
