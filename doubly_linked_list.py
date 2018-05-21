@@ -1,5 +1,4 @@
 
-
     # The node class
 class Node(object):
 
@@ -12,6 +11,8 @@ class Node(object):
         # The doubly linked list class
 class DoublyLinkedList(object):
 
+    length = 0 # class attribute
+
     def __init__(self):
         """Initialize this doubly linked list ."""
         self.head = None
@@ -20,7 +21,6 @@ class DoublyLinkedList(object):
     def string_representation(self):
         """Return a formatted string representation of this linked list."""
 
-
     def list_of_items(self):
          """Return a list of all items in this linked list.
         Best and worst case running time: Theta(n) for n items in the list
@@ -28,9 +28,11 @@ class DoublyLinkedList(object):
 
     def is_empty(self):
         """Return True if this linked list is empty, or False."""
+        return self.head is None
 
     def length(self):
          """Return the length of this linked list by traversing its nodes."""
+         return DoublyLinkedList.length
 
     def get_at_index(self,index):
 
@@ -72,4 +74,3 @@ class DoublyLinkedList(object):
 
     def sort_list(self):
         """ Using Quick Sort to sort the list"""
-    
