@@ -2,11 +2,14 @@
     # The node class
 class Node(object):
 
-    next_pointer = None # This points to the next node
-    prev_pointer = None # This points to the previous node
+    next = None
+    previous = None
 
     def __init__(self,data):
         self.data = data
+
+    def representation(self):
+        return "Node with data of {} ".fomat(self.data)
 
         # The doubly linked list class
 class DoublyLinkedList(object):
@@ -17,10 +20,6 @@ class DoublyLinkedList(object):
         """Initialize this doubly linked list ."""
         self.head = None
         self.tail = None
-            # appends items in the list if any when list created
-        if items is not None:
-            for item in items:
-                self.append(item)
 
     def string_representation(self):
         """Return a formatted string representation of this linked list."""
@@ -28,13 +27,13 @@ class DoublyLinkedList(object):
 
     def list_of_items(self):
          """Return a list of all items in this linked list"""
+         assert(is_empty() == True), "The list is empty"
+         try:
+             pass
+         except TypeError,IndexError:
+             print "Error Occured : Either Null value found or index out of bound"
 
-        items = []
-        node = self.head
-        while node is not None:
-            items.append(node.data)
-            node = node.next_pointer
-        return items
+
 
     def is_empty(self):
         """Return True if this linked list is empty, or False."""
@@ -58,8 +57,9 @@ class DoublyLinkedList(object):
         Worst case running time: ??? under what conditions? [TODO]"""
 
     def append(self,item):
-        """Insert the given item at the tail of this linked list.
-        Best and worst case running time: ??? under what conditions? [TODO]"""
+        """Insert the given item at the tail of this linked list."""
+        if self.tail is not None:
+            self.tail.data = item
 
 
     def prepend(self,item):
@@ -67,10 +67,8 @@ class DoublyLinkedList(object):
         Best and worst case running time: ??? under what conditions? [TODO]"""
 
     def find(self,item):
-        """Return an item from this linked list satisfying the given quality.
-        Best case running time: Omega(1) if item is near the head of the list.
-        Worst case running time: O(n) if item is near the tail of the list or
-        not present and we need to loop through all n nodes in the list."""
+        """Return an item from this linked list satisfying the given quality"""
+
 
     def replace(self, old_item, new_item):
         """Replace the given old_item in this linked list with given new_item
