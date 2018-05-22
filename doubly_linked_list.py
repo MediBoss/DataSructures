@@ -29,15 +29,20 @@ class DoublyLinkedList(object):
          """Return a list of all items in this linked list"""
          assert(is_empty() == True), "The list is empty"
          try:
-             pass
+             list_to_be_returned = []
+             temporary_node = self.head # starting with the head node
+             while temporary_node is not None:
+                 list_to_be_returned.append(temporary_node.data)
+                 temporary_node = temp_node.next
+
          except TypeError,IndexError:
              print "Error Occured : Either Null value found or index out of bound"
 
-
+         return list_to_be_returned
 
     def is_empty(self):
         """Return True if this linked list is empty, or False."""
-        return self.head is None
+        return self.head is None == None
 
     def length(self):
          """Return the length of this linked list by traversing its nodes."""
@@ -58,9 +63,11 @@ class DoublyLinkedList(object):
 
     def append(self,item):
         """Insert the given item at the tail of this linked list."""
-        if self.tail is not None:
-            self.tail.data = item
-
+        temporary_node = Node(item) # creates a new node with the data passed O(1)
+        temporary_node.next = None # Sets its pointer to a value of nothing
+        self.tail.next = temporary_node # next pointer of tail links to the temp.node
+        temporary_node.previous = self.tail # the previous node of temp.node now links to former tail
+        self.tail = temporary_node # now temp node is the tail
 
     def prepend(self,item):
         """Insert the given item at the head of this linked list.
