@@ -13,18 +13,28 @@ class DoublyLinkedList(object):
 
     length = 0 # class attribute
 
-    def __init__(self):
+    def __init__(self, items = None):
         """Initialize this doubly linked list ."""
         self.head = None
         self.tail = None
+            # appends items in the list if any when list created
+        if items is not None:
+            for item in items:
+                self.append(item)
 
     def string_representation(self):
         """Return a formatted string representation of this linked list."""
+        return "Doubly linked list with {} elemnets".fromat(DoublyLinkedList.length)
 
     def list_of_items(self):
-         """Return a list of all items in this linked list.
-        Best and worst case running time: Theta(n) for n items in the list
-        because we always need to loop through all n nodes."""
+         """Return a list of all items in this linked list"""
+
+        items = []
+        node = self.head
+        while node is not None:
+            items.append(node.data)
+            node = node.next_pointer
+        return items
 
     def is_empty(self):
         """Return True if this linked list is empty, or False."""
@@ -50,6 +60,7 @@ class DoublyLinkedList(object):
     def append(self,item):
         """Insert the given item at the tail of this linked list.
         Best and worst case running time: ??? under what conditions? [TODO]"""
+
 
     def prepend(self,item):
         """Insert the given item at the head of this linked list.
