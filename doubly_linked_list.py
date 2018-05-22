@@ -42,7 +42,7 @@ class DoublyLinkedList(object):
 
     def is_empty(self):
         """Return True if this linked list is empty, or False."""
-        return self.head is None == None
+        return self.head is None
 
     def length(self):
          """Return the length of this linked list by traversing its nodes."""
