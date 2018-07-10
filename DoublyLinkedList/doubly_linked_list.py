@@ -2,20 +2,20 @@
     # The node class
 class Node:
 
-def __init__(self,data):
-    self.data = Data
-    self.next = None
-    self.prev = None
+    def __init__(self,data):
+        self.data = Data
+        self.next = None
+        self.prev = None
 
         # The doubly linked list class
 class DoublyLinkedList:
 
     def __init__(self):
         """Initialize this doubly linked list ."""
-        self.head = None
-        self.tail = None
-        self.size = 0
-
+        if isinstance(head, Node):
+            self.head = None
+            self.tail = None
+            self.size = 0
 
     def list_of_items(self):
          """Return a list of all items in this linked list"""
@@ -55,13 +55,31 @@ class DoublyLinkedList:
 
     def append(self, data):
         """Insert the given item at the tail of this linked list."""
-            pass
+
+        #If the list is empty...
+        if self.head is None:
+            new_node = Node(data)
+            new_node.prev = None
+            self.head = new_node
+        # if the list is not empty
+        else:
+            new_node = Node(data)
+            current_node = self.head
+            while current_node.next:
+                current_node = current_node.next
+            new_node.prev = current_node
+            new_node.next = None
+
+
 
     def prepend(self, data):
         """Insert the given item at the head of this linked list.
         Best and worst case running time: ??? under what conditions? [TODO]"""
+        pass
 
-            pass
+    def print_list(self):
+
+
 
     def find(self, data):
         """Return an item from this linked list satisfying the given quality"""
@@ -73,7 +91,7 @@ class DoublyLinkedList:
         Best case running time: ??? under what conditions? [TODO]
         Worst case running time: ??? under what conditions? [TODO]"""
 
-    def delete(self,item):
+    def delete(self, data):
         """Delete the given item from this linked list, or raise ValueError.
         Best case running time: ??? under what conditions? [TODO]
         Worst case running time: ??? under what conditions? [TODO]"""
