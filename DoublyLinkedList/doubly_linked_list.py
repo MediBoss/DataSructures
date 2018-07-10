@@ -12,7 +12,7 @@ class DoublyLinkedList:
 
     def __init__(self):
         """Initialize this doubly linked list ."""
-        if isinstance(head, Node):
+        if isinstance(head, Node) and isinstance(tail, Node):
             self.head = None
             self.tail = None
             self.size = 0
@@ -32,69 +32,21 @@ class DoublyLinkedList:
 
          return list_to_be_returned
 
-    def is_empty(self):
-        """Return True if this linked list is empty, or False."""
-        return self.head is None
-
-    def length(self):
-         """Return the length of this linked list by traversing its nodes."""
-         return DoublyLinkedList.length
-
-    def get_at_index(self,index):
-
-        """Return the item at the given index in this linked list, or
-        raise ValueError if the given index is out of range of the list size.
-        Best case running time: ??? under what conditions? [TODO]
-        Worst case running time: ??? under what conditions? [TODO]"""
-
-    def insert_at_index(self,item):
-        """Insert the given item at the given index in this linked list, or
-        raise ValueError if the given index is out of range of the list size.
-        Best case running time: ??? under what conditions? [TODO]
-        Worst case running time: ??? under what conditions? [TODO]"""
 
     def append(self, data):
         """Insert the given item at the tail of this linked list."""
 
+        new_node = Node(data)
         #If the list is empty...
         if self.head is None:
-            new_node = Node(data)
+            new_node.next = None
             new_node.prev = None
             self.head = new_node
+            self.tail = self.head.next
         # if the list is not empty
         else:
-            new_node = Node(data)
             current_node = self.head
             while current_node.next:
                 current_node = current_node.next
             new_node.prev = current_node
             new_node.next = None
-
-
-
-    def prepend(self, data):
-        """Insert the given item at the head of this linked list.
-        Best and worst case running time: ??? under what conditions? [TODO]"""
-        pass
-
-    def print_list(self):
-
-
-
-    def find(self, data):
-        """Return an item from this linked list satisfying the given quality"""
-
-
-    def replace(self, old_data, new_data):
-        """Replace the given old_item in this linked list with given new_item
-        using the same node, or raise ValueError if old_item is not found.
-        Best case running time: ??? under what conditions? [TODO]
-        Worst case running time: ??? under what conditions? [TODO]"""
-
-    def delete(self, data):
-        """Delete the given item from this linked list, or raise ValueError.
-        Best case running time: ??? under what conditions? [TODO]
-        Worst case running time: ??? under what conditions? [TODO]"""
-
-    def sort_list(self):
-        """ Using Quick Sort to sort the list"""
