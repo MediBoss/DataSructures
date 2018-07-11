@@ -30,7 +30,11 @@ class DoublyLinkedList:
 
          return list_to_be_returned
 
+    # function that retruns a boolean value if the list is empty or not
+    def isEmpty(self):
+        return self.head is None
 
+    # This function adds teh data given at the end of the list
     def append(self, data):
         """Insert the given item at the tail of this linked list."""
 
@@ -51,3 +55,11 @@ class DoublyLinkedList:
             current_node.next = new_node
             new_node.prev = current_node
             return
+
+        # This function adds teh data given at the beginning of the list
+        def prepand(self, data):
+            new_node = Node(data)
+            new_node.next = self.head
+            if !isEmpty():
+                self.head.prev = new_node
+            self.head = new_node
