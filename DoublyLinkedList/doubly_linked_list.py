@@ -14,8 +14,6 @@ class DoublyLinkedList:
         """Initialize this doubly linked list ."""
         if isinstance(head, Node) and isinstance(tail, Node):
             self.head = None
-            self.tail = None
-            self.size = 0
 
     def list_of_items(self):
          """Return a list of all items in this linked list"""
@@ -37,17 +35,19 @@ class DoublyLinkedList:
         """Insert the given item at the tail of this linked list."""
 
         new_node = Node(data)
+        new_node.next = None # since it will be the last node in the list
+
         #If the list is empty...
         if self.head is None:
-            new_node.next = None
             new_node.prev = None
             self.head = new_node
-            self.tail = self.head.next
+            return
         # if the list is not empty
         else:
             current_node = self.head
-            while current_node.next:
+            while current_node.next is not None:
                 current_node = current_node.next
 
+            current_node.next = new_node
             new_node.prev = current_node
-            new_node.next = self.tail
+            return
