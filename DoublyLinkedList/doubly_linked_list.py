@@ -48,5 +48,6 @@ class DoublyLinkedList:
             current_node = self.head
             while current_node.next:
                 current_node = current_node.next
+
             new_node.prev = current_node
-            new_node.next = None
+            new_node.next = self.tail
