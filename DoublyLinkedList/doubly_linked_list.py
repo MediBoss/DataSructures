@@ -30,8 +30,6 @@ class DoublyLinkedList:
         return self.head is None
     
     def append(self, data):
-
-
         new_node = Node(data)
         new_node.next = None # since it will be the last node in the list
         if self.head is None:
