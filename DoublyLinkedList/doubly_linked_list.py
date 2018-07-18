@@ -1,6 +1,6 @@
 
     # The node class
-class Node:
+class Node(object):
 
     def __init__(self,data):
         self.data = Data
@@ -8,7 +8,7 @@ class Node:
         self.prev = None
 
         # The doubly linked list class
-class DoublyLinkedList:
+class DoublyLinkedList(object):
 
     def __init__(self):
         self.head = None
@@ -17,6 +17,22 @@ class DoublyLinkedList:
     # function that retruns a boolean value if the list is empty or not
     def isEmpty(self):
         return self.head == None
+
+    def printLinkedList(self):
+        if self.isEmpty() == True:
+            print "The list is Empty"
+            return
+        else:
+            temp_node = self.head
+            while(temp_node.next != None):
+                print(temp_node.data)
+
+    def find(self, data):
+
+    def replace(self, old_item, new_item):
+
+    def length(self):
+
 
     # This function adds the data given at the end of the list
     def insertTail(self, data):
