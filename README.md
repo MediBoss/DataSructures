@@ -22,6 +22,8 @@ This repo is a collection of core Computer Science Data Structures and their tim
 * Binary Search Tree
 * Tree Transversal
 * Set
+* Graph
+
 
 ## Languages Used : 
 
