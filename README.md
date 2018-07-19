@@ -17,8 +17,7 @@ This repo is a collection of core Computer Science Data Structures and their tim
 * <a href = "https://github.com/MediBoss/DataStructures/tree/master/DoublyLinkedList"> Doubly Linked List</a>
 * Stacks
 * Queus
-* Hash Tables
-* Map/Dictionary
+* Hash Table
 * Sets
 * Tree Transversal
 
