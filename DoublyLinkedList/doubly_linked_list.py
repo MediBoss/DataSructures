@@ -27,7 +27,18 @@ class DoublyLinkedList(object):
             while(temp_node.next != None):
                 print(temp_node.data)
 
+    # This functions retruns a boolean on wheter or not the data is found in the list
     def find(self, data):
+        if self.isEmpty() == True:
+            print "The List is empty"
+        else:
+            temp_node = self.head # start from the head node
+            while temp_node is not None:
+                if temp_node.data == data:
+                    return True
+                temp_node = temp_node.next
+            return False
+
 
     def replace(self, old_item, new_item):
 
