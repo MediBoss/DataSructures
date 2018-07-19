@@ -10,6 +10,7 @@ class Node(object):
         # The doubly linked list class
 class DoublyLinkedList(object):
 
+    counter  = 0
     def __init__(self):
         self.head = None
         self.tail = None
@@ -52,6 +53,7 @@ class DoublyLinkedList(object):
         self.tail.next = new_node
         new_node.prev = self.tail
         self.tail = new_node
+        self.counter += 1
 
     def deleteTail(self):
         if self.isEmpty() == True:
@@ -60,6 +62,7 @@ class DoublyLinkedList(object):
             temp_node = self.head
             self.tail = self.tail.prev
             self.tail.next = None
+            self.counter -= 1
             return temp
 
         # This function adds the data given at the beginning of the list
@@ -71,6 +74,7 @@ class DoublyLinkedList(object):
             self.head.prev = new_node
             new_node.next = self.head
             self.head = new_node
+        self.counter += 1
 
     #This function deletes the head Node from the list
     def deleteHead(self):
@@ -80,6 +84,7 @@ class DoublyLinkedList(object):
         if self.isEmpty() == True:
             self.tail = None
             print "The List is Empty"
+        self.counter -= 1
         return temp
 
     #This function deletes a Node from the list given a data
