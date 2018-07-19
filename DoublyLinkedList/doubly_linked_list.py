@@ -49,7 +49,8 @@ class DoublyLinkedList(object):
             temp_node = self.head
             if new_node.data == self.head.data:
                 self.head.data = new_item
-            else temp_node.data == self.tail.data:
+            else:
+                temp_node.data == self.tail.data
                 self.tail.data  = new_item
             while(temp_node is not None):
                 temp_node = temp_node.next

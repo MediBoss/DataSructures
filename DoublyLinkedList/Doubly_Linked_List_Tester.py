@@ -1,3 +1,3 @@
-import doubly_linked_list
-
-list = DoublyLinkedList()
+from doubly_linked_list import DoublyLinkedList
+from doubly_linked_list import Node
+import unittest
