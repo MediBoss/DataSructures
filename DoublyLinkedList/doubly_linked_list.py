@@ -42,6 +42,21 @@ class DoublyLinkedList(object):
 
 
     def replace(self, old_item, new_item):
+        if self.isEmpty is True:
+            return "The list is Empty"
+        else:
+            new_node = Node(new_item)
+            temp_node = self.head
+            if new_node.data == self.head.data:
+                self.head.data = new_item
+            else temp_node.data == self.tail.data:
+                self.tail.data  = new_item
+            while(temp_node is not None):
+                temp_node = temp_node.next
+                if temp_node.data == old_item:
+                    temp_node.data = new_item
+                else:
+                    return "Data Not Found"
 
 
     def length(self):
