@@ -31,7 +31,14 @@ class TestDoublyLinkedList(unittest.TestCase):
         assert dll.length() == 4
         # Deleting to decrease length
 
-
+        dll.delete("hello")
+        assert dll.length() == 3
+        dll.delete("hi")
+        assert dll.length() == 2
+        dll.delete("howdy")
+        assert dll.length() == 1
+        dll.delete("holla")
+        assert dll.length() == 0
 
 if __name__ == '__main__':
     unittest.main()
