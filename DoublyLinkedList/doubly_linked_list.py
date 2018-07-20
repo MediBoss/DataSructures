@@ -3,7 +3,7 @@
 class Node(object):
 
     def __init__(self,data):
-        self.data = Data
+        self.data = data
         self.next = None
         self.prev = None
 
@@ -86,7 +86,7 @@ class DoublyLinkedList(object):
     def insertHead(self, data):
         new_node = Node(data)
         if self.isEmpty() == True:
-            self.tail = new_node
+            self.head = new_node
         else:
             self.head.prev = new_node
             new_node.next = self.head
