@@ -76,7 +76,7 @@ class DoublyLinkedList(object):
         if self.isEmpty() == True:
             print "The List is Empty"
         else:
-            temp_node = self.head
+            temp_node = self.tail
             self.tail = self.tail.prev
             self.tail.next = None
             self.counter -= 1
@@ -98,11 +98,11 @@ class DoublyLinkedList(object):
         temp_node = self.head
         self.head = self.head.next
         self.head.prev = None
-        if self.isEmpty() == True:
+        if self.head == None:
             self.tail = None
             print "The List is Empty"
         self.counter -= 1
-        return temp
+        return temp_node
 
     #This function deletes a Node from the list given a data
     def delete(self, data):
@@ -110,14 +110,15 @@ class DoublyLinkedList(object):
             print "The List is Empty"
             return
         else:
-            temp_node = self.head
-            while(temp_node.data != data):
-                # looking for the node that has the data to be deleted
-                temp_node = temp_node.next
-            if temp_node == self.head:
+            current_node = self.head
+            while(current_node.data is not data):
+                current_node = current_node.next
+            if current_node == self.head:
                 self.deleteHead()
-            elif temp_node == self.tail:
+            elif current_node == tail:
                 self.deleteTail()
             else:
-                temp_node.prev.next = temp_node.next
-                temp_node.next.prev = temp_node.prev
+                current_node.prev.next = current_node.next
+                current_node.next.prev = current_node.prev
+
+        print "The data is not found in the List"
