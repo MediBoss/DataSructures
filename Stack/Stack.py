@@ -16,26 +16,31 @@ class Stack(object):
         self.counter = 0
 
     # Retruns an integer that represents the length of the stack
-    def size():
+    def size(self):
         return self.counter
 
     # Checks if the sack is empty or not
-    def isEmpty():
-        return self.head == None
+    def isEmpty(self):
+        return self.head is None
 
     # inserts  a data on top of the stack
-    def push(data):
-        node = Node(data)
-        node.next = self.top
-        self.top = node
+    def push(self,data):
+        new_node = Node(data, self.top)
+        self.top = new_node
         self.counter += 1
 
     # Pops off the node on top of the stack and returns its data
-    def pop():
+    def pop(self):
+        if self.isEmpty is True:
+            return
+
+        old_top = self.top
         self.top = self.top.next
-        self.counter -= 1
-        return top.data
+        return old_top.data
 
     # Returns the data at the top of the stack
-    def peek():
+    def peak(self):
+        if self.isEmpty is True:
+            return None
+            
         return self.top.data
