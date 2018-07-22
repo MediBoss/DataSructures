@@ -13,6 +13,15 @@ class Stack(object):
                 self.push(data)
             return
 
-        self.head = None
+        self.top = None
 
-    def push()
+    def isEmpty():
+        return self.head == None
+
+    def push(data):
+        node = Node(data)
+        node.next = self.top
+        self.top = node
+
+    def pop():
+        
