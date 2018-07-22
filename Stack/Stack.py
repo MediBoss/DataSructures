@@ -13,7 +13,12 @@ class Stack(object):
                 self.push(data)
             return
         self.top = None
-        
+        self.counter = 0
+
+    # Retruns an integer that represents the length of the stack
+    def size():
+        return self.counter
+
     # Checks if the sack is empty or not
     def isEmpty():
         return self.head == None
@@ -23,10 +28,12 @@ class Stack(object):
         node = Node(data)
         node.next = self.top
         self.top = node
+        self.counter += 1
 
     # Pops off the node on top of the stack and returns its data
     def pop():
         self.top = self.top.next
+        self.counter -= 1
         return top.data
 
     # Returns the data at the top of the stack
