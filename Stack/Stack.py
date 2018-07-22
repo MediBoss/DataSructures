@@ -31,16 +31,17 @@ class Stack(object):
 
     # Pops off the node on top of the stack and returns its data
     def pop(self):
-        if self.isEmpty is True:
+        if self.isEmpty() is True:
             return
 
         old_top = self.top
         self.top = self.top.next
+        self.counter -= 1
         return old_top.data
 
     # Returns the data at the top of the stack
     def peak(self):
-        if self.isEmpty is True:
+        if self.isEmpty() is True:
             return None
 
         return self.top.data
