@@ -24,4 +24,5 @@ class Stack(object):
         self.top = node
 
     def pop():
-        
+        self.top = self.top.next
+        return top.data
