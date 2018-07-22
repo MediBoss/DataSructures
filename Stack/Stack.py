@@ -21,7 +21,7 @@ class Stack(object):
 
     # Checks if the sack is empty or not
     def isEmpty(self):
-        return self.head is None
+        return self.top is None
 
     # inserts  a data on top of the stack
     def push(self,data):
@@ -42,5 +42,5 @@ class Stack(object):
     def peak(self):
         if self.isEmpty is True:
             return None
-            
+
         return self.top.data
