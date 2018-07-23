@@ -15,6 +15,15 @@ class DoublyLinkedList(object):
         self.head = None
         self.tail = None
 
+
+    # Getter methods
+    def getHead(self):
+            return self.head
+
+    def getTails(self):
+            return self.tail
+
+
     # function that retruns a boolean value if the list is empty or not
     def isEmpty(self):
         return self.head == None
@@ -40,7 +49,7 @@ class DoublyLinkedList(object):
                 temp_node = temp_node.next
             return False
 
-
+    # This function replaces a data from the list with a new one
     def replace(self, old_item, new_item):
         if self.isEmpty is True:
             return "The list is Empty"
@@ -59,7 +68,7 @@ class DoublyLinkedList(object):
                 else:
                     return "Data Not Found"
 
-
+    # This function returns the size of the list
     def length(self):
         return self.counter
 
@@ -72,6 +81,7 @@ class DoublyLinkedList(object):
         self.tail = new_node
         self.counter += 1
 
+    # This function deletes(more like detaches) the data at the end of list
     def deleteTail(self):
         if self.isEmpty() == True:
             print "The List is Empty"
