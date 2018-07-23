@@ -1,5 +1,5 @@
 
-    # The node class
+# The node class
 class Node(object):
 
     def __init__(self,data):
@@ -7,21 +7,20 @@ class Node(object):
         self.next = None
         self.prev = None
 
-        # The doubly linked list class
+# The doubly linked list class
 class DoublyLinkedList(object):
 
-    counter  = 0
+    counter = 0
     def __init__(self):
         self.head = None
         self.tail = None
 
-
     # Getter methods
     def getHead(self):
-            return self.head
+        return self.head
 
     def getTails(self):
-            return self.tail
+        return self.tail
 
 
     # function that retruns a boolean value if the list is empty or not

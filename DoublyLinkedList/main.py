@@ -16,8 +16,12 @@ class TestDoublyLinkedList(unittest.TestCase):
         list.insertHead("Medi")
         list.insertHead("Yves")
         list.insertHead("Jonas")
+        list.insertTail("Elliot")
         assert list.isEmpty() is False
-        assert list.length() == 3
+        assert list.length() == 4
+        assert list.find("Yves") is True
+        assert list.find("Marc") is False
+
 
 
 
