@@ -8,4 +8,11 @@ class Node(object):
         return "Node with data {}".format(self.data)
 
 class Queue(object):
-    
+
+    def __init__(self, iterator=None):
+        if iterator is not None:
+            for data in iterator:
+                self.enqueue(data)
+
+        self.front = None
+        self.back = None
