@@ -1,12 +1,12 @@
-
-# The node class
 class Node(object):
 
     def __init__(self,data):
         self.data = data
         self.next = None
 
-# The doubly linked list class
+    def __repr__(self):
+        return "Node with data {}".format(self.data)
+
 class LinkedList(object):
 
     def __init__(self):
