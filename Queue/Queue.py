@@ -8,7 +8,7 @@ class Node(object):
         return "Node with data {}".format(self.data)
 
 class Queue(object):
-    
+
     def __init__(self, iterator=None):
         if iterator is not None:
             for data in iterator:
@@ -30,7 +30,14 @@ class Queue(object):
     def enqueue(self, data):
 
     # Function to remove and return the object at the front of the queue
-    def dequeue(self, data):
+    def dequeue(self):
+        if self.isEmpty() is True:
+            return None
+        else:
+            temp = Node(data):
+            
+
+
 
     # Function to retrun the object at the front of the queue
     def peak(self):
