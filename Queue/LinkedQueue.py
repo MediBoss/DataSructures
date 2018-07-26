@@ -47,8 +47,8 @@ class Queue(object):
 
     # Function to retrun the object at the front of the queue
     def front(self):
-        pass
+        return self.front
 
     # Function to return the object at the tail of the queue
     def rear(self):
-        pass
+        return self.rear
