@@ -25,7 +25,6 @@ class Queue(object):
 
     # Function to add an object at the back of the queue
     def enqueue(self, data):
-
         temp = Node(data)
         if self.isEmpty():
             self.front = self.rear = temp
@@ -36,7 +35,15 @@ class Queue(object):
 
     # Function to remove and return the object at the front of the queue
     def dequeue(self):
-        pass
+        temp = self.front
+        if self.isEmpty():
+            return
+        elif self.front == self.rear:
+            self.front = self.rear = NULL
+            return temp
+        else:
+            self.front = self.front.next
+            return temp
 
     # Function to retrun the object at the front of the queue
     def front(self):
