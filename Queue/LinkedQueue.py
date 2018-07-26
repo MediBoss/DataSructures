@@ -28,10 +28,12 @@ class Queue(object):
         temp = Node(data)
         if self.isEmpty():
             self.front = self.rear = temp
+            self.counter += 1
             return
 
         self.rear.next = temp
         self.rear = temp
+        self.counter += 1
 
     # Function to remove and return the object at the front of the queue
     def dequeue(self):
@@ -40,9 +42,11 @@ class Queue(object):
             return
         elif self.front == self.rear:
             self.front = self.rear = NULL
+            self.counter -= 1
             return temp
         else:
             self.front = self.front.next
+            self.counter -= 1
             return temp
 
     # Function to retrun the object at the front of the queue
