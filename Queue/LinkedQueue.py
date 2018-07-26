@@ -9,7 +9,7 @@ class Node(object):
 
 class Queue(object):
 
-    def __init__(self, iterator=None):
+    def __init__(self):
 
         self.front = None
         self.rear = None
