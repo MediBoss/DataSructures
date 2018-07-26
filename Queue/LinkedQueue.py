@@ -21,7 +21,7 @@ class Queue(object):
 
     # Function to to check wheater or not the list empty
     def isEmpty(self):
-        return (self.front == NULL and self.rear == NULL)
+        return (self.front == None and self.rear == None)
 
     # Function to add an object at the back of the queue
     def enqueue(self, data):
@@ -41,18 +41,10 @@ class Queue(object):
         if self.isEmpty():
             return
         elif self.front == self.rear:
-            self.front = self.rear = NULL
+            self.front = self.rear = None
             self.counter -= 1
             return temp
         else:
             self.front = self.front.next
             self.counter -= 1
             return temp
-
-    # Function to retrun the object at the front of the queue
-    def front(self):
-        return self.front
-
-    # Function to return the object at the tail of the queue
-    def rear(self):
-        return self.rear
