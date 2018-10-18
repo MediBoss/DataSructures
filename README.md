@@ -1,4 +1,4 @@
-![alt text](http://www.kdjohar.in/media/blogs/2017/06/04/ds.jpg "Logo Title Text 1")
+![alt text](https://jupitervidya.com/wp-content/uploads/2014/02/data-structures-training-bangalore-jupiter-vidya-430x270.jpg "Logo Title Text 1")
 
 # Data Structures </br>
 
