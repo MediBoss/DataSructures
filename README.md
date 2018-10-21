@@ -27,5 +27,6 @@ This repo is a collection of core Computer Science Data Structures and their tim
 ## Languages Used : 
 
 * Python
+* Java
 
 
