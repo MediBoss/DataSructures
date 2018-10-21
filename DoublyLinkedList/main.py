@@ -11,6 +11,7 @@ class TestDoublyLinkedList(unittest.TestCase):
         assert dll.tail is None
         assert dll.counter == 0
 
+    # function to test the printLinkedList() method
     def test_print_list(self):
         list = DoublyLinkedList()
         list.printLinkedList()
@@ -18,6 +19,25 @@ class TestDoublyLinkedList(unittest.TestCase):
         list.insertHead("Yves")
         list.insertHead("Jonas")
         list.printLinkedList()
+
+
+    # Function to test finding a data from the list
+    def test_find(self):
+        dll = DoublyLinkedList()
+        assert dll.head is None
+        dll.insertHead("Yves")
+        dll.insertHead("Jonas")
+        assert dll.find("Medi") is False
+        assert dll.find("Yves") is True
+
+
+
+    def test_replace(self):
+        
+
+
+
+
 
 
     # Testing insterHead and insertTail Methods
