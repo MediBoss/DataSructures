@@ -11,14 +11,23 @@ class TestDoublyLinkedList(unittest.TestCase):
         assert dll.tail is None
         assert dll.counter == 0
 
-    def test_general(self):
+    def test_print_list(self):
+        list = DoublyLinkedList()
+        list.printLinkedList()
+        list.insertHead("Medi")
+        list.insertHead("Yves")
+        list.insertHead("Jonas")
+        list.printLinkedList()
+
+
+    # Testing insterHead and insertTail Methods
+    def test_data_insertion(self):
         list = DoublyLinkedList()
         list.insertHead("Medi")
         list.insertHead("Yves")
         list.insertHead("Jonas")
-        list.insertTail("Elliot")
         assert list.isEmpty() is False
-        assert list.length() == 4
+        assert list.length() == 3
         assert list.find("Yves") is True
         assert list.find("Marc") is False
 

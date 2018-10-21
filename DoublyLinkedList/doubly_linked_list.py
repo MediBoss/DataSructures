@@ -33,7 +33,7 @@ class DoublyLinkedList(object):
             return
         else:
             temp_node = self.head
-            while(temp_node.next != None):
+            while(temp_node):
                 print(temp_node.data)
                 temp_node = temp_node.next
 
