@@ -35,6 +35,7 @@ class DoublyLinkedList(object):
             temp_node = self.head
             while(temp_node.next != None):
                 print(temp_node.data)
+                temp_node = temp_node.next
 
     # This functions retruns a boolean on wheter or not the data is found in the list
     def find(self, data):
