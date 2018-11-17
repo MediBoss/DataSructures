@@ -44,7 +44,7 @@ class DoublyLinkedList(object):
         else:
             temp_node = self.head # start from the head node
             while temp_node is not None:
-                if temp_node.data == data:
+                if temp_node.data == data
                     return True
                 temp_node = temp_node.next
             return False
@@ -53,20 +53,22 @@ class DoublyLinkedList(object):
     def replace(self, old_item, new_item):
         if self.isEmpty is True:
             return "The list is Empty"
+
+        # if the list is not empty... proceeding in finding it
+        new_node = Node(new_item)
+        temp_node = self.head
+        if new_node.data == self.head.data:
+            self.head.data = new_item
+            return "{} has been replaced with {}".format(old_item, new_item)
         else:
-            new_node = Node(new_item)
-            temp_node = self.head
-            if new_node.data == self.head.data:
-                self.head.data = new_item
+            temp_node.data == self.tail.data
+            self.tail.data  = new_item
+        while(temp_node is not None):
+            temp_node = temp_node.next
+            if temp_node.data == old_item:
+                temp_node.data = new_item
             else:
-                temp_node.data == self.tail.data
-                self.tail.data  = new_item
-            while(temp_node is not None):
-                temp_node = temp_node.next
-                if temp_node.data == old_item:
-                    temp_node.data = new_item
-                else:
-                    return "Data Not Found"
+                return "Data Not Found"
 
     # This function returns the size of the list
     def length(self):

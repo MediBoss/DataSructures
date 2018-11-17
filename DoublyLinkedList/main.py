@@ -33,7 +33,11 @@ class TestDoublyLinkedList(unittest.TestCase):
 
 
     def test_replace(self):
-        
+        dll = DoublyLinkedList()
+        assert dll.head is None
+        dll.insertHead("Medi")
+        dll.printLinkedList()
+        dll.replace("Medi", "Cenz")
 
 
 
