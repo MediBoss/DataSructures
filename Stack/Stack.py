@@ -1,7 +1,7 @@
 class Node(object):
-    def __init__(self, data, next_node=None):
+    def __init__(self, data=None):
         self.data = data
-        self.next = next_node
+        self.next = None
 
     def __repr__(self):
         return "Node: {}".format(self.data)
@@ -25,19 +25,34 @@ class Stack(object):
 
     # inserts  a data on top of the stack
     def push(self,data):
-        new_node = Node(data, self.top)
-        self.top = new_node
-        self.counter += 1
+        new_node = Node(data)
+        # check if the top node is not empty
+        if self.top:
+            new_node.next = self.top
+            self.top = new_node
+            self.counter += 1
+        # if there is no top, we put the new node at the top
+        else:
+            self.top = new_node
+            self.counter += 1
 
     # Pops off the node on top of the stack and returns its data
     def pop(self):
         if self.isEmpty() is True:
             return
 
-        old_top = self.top
-        self.top = self.top.next
-        self.counter -= 1
-        return old_top.data
+        else:
+            data = self.top.data
+            self.size -= 1
+            # checks if there's an element after the top node
+            if self.top.next:
+                self.top = self.top.next
+            # if there isn't
+            else:
+                self.top = None
+            return data
+            
+        return data
 
     # Returns the data at the top of the stack
     def peak(self):
