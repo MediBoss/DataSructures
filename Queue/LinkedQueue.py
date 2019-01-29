@@ -1,6 +1,7 @@
 '''
-    A LinkedList-style implementation of the Queue Data Struture
+    A Node-Based implementation of the Queue Data Struture
 '''
+from LinkedList import LinkedList
 class Node(object):
 
     def __init__(self,data):
@@ -19,12 +20,15 @@ class Queue(object):
     def size(self):
         return  self.counter
 
-    # Function to to check wheater or not the list empty
     def isEmpty(self):
+        ''' Check wheater or not the list empty'''
+
         return (self.front == None and self.rear == None)
 
-    # Function to add an object at the back of the queue
+
     def enqueue(self, data):
+        ''' Add an object at the back of the queue'''
+
         temp = Node(data)
         if self.isEmpty():
             self.front = self.rear = temp
@@ -35,8 +39,9 @@ class Queue(object):
         self.rear = temp
         self.counter += 1
 
-    # Function to remove and return the object at the front of the queue
     def dequeue(self):
+        ''' Function to remove and return the object at the front of the queue '''
+
         temp = self.front
         if self.isEmpty():
             return
