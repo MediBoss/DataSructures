@@ -1,7 +1,7 @@
 # Trees
 
 Trees are essentially a hierarchical type of Data Structure. In D.S such as Lists, Queues,
-Stacks, etc... items are followed by each other. Whereas with Trees, there is a paranet-
+Stacks, etc... items are followed by each other. Whereas with Trees, there is a parent-
 child(children) relationship.
 
 ## Properties
