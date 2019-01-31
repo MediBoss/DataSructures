@@ -20,18 +20,24 @@ class BST:
 
     # traverse
 
-    # minimum
     def min(self):
-        ''' Return the node with the minimum value
+        ''' Return the node with the minimum value in the Binary Search Tree
             Time Complexity : O(h) where h is the height of tree
             Space Complexity : O(1)
         '''
         current = self.root
-        while current.left != None:
+        while current.left:
             current = current.left
 
         return current
 
-    # maximum
     def max(self):
-        pass
+        ''' Return the node with the maximum value in the Binary Search Tree
+            Time Complexity : O(h) where h is the height of tree
+            Space Complexity : O(1)
+        '''
+        current = self.root
+        while current.right:
+            current = current.right
+
+        return current
