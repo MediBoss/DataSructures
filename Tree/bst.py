@@ -64,6 +64,7 @@ class BST:
 
     # DEPTH FIRST SEARCH
     def inoder(self, root_node, data):
+        ''' Traverse the Tree from left child to root finishing with right child'''
 
         current = root_node
         if current is None:
@@ -72,8 +73,23 @@ class BST:
         print(current.data)
         self.inoder(root_node.right, data)
 
-    def postorder(self, root_node, data):
-        pass
+    def preorder(self, root_node, data):
+        ''' Traverse the Tree from root to left child finishing with right child'''
+
+        current = root_node
+        if current:
+            print(current.data)
+            self.preorder(current.left, data)
+            self.preorder(current.right, data)
+
+def postorder(self, root_node, data):
+    ''' Traverse the Tree from right child to left child finishing with root'''
+
+    current = root_node
+    if current:
+        self.postorder(current.left)
+        self.postorder(current.right)
+        print(current.data)
 
     # height
 
