@@ -35,6 +35,29 @@ class BST:
                     return
 
 
+    def recursive_insert(self, root, data):
+        ''' Insert a node in the Binary Search Tree recursively
+            Time Complexity : O(h) where h is the height of tree
+            Space Complexity : O(1)
+        '''
+        if root is None:
+            new_node = Node(data)
+            root = new_node
+            return
+        else:
+            new = node = Node(data)
+            if data <= root.left:
+                if root.left:
+                    recursive_insert(root.left, data)
+                else:
+                    root.left = new_node
+            else:
+                if root.right:
+                    recursive_insert(root.right, data)
+                else:
+                    root.right = new_node
+
+
     # remove
 
     # traverse
