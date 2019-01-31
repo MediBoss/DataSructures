@@ -48,12 +48,12 @@ class BST:
             new = node = Node(data)
             if data <= root.left:
                 if root.left:
-                    recursive_insert(root.left, data)
+                    self.recursive_insert(root.left, data)
                 else:
                     root.left = new_node
             else:
                 if root.right:
-                    recursive_insert(root.right, data)
+                    self.recursive_insert(root.right, data)
                 else:
                     root.right = new_node
 
@@ -62,8 +62,17 @@ class BST:
     def remove(self, node):
         pass
 
-    # search
-    def inoder(self,data):
+    # DEPTH FIRST SEARCH
+    def inoder(self, root_node, data):
+
+        current = root_node
+        if current is None:
+            return
+        self.inoder(root_node.left, data)
+        print(current.data)
+        self.inoder(root_node.right, data)
+
+    def postorder(self, root_node, data):
         pass
 
     # height
