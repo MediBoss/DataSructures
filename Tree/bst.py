@@ -13,8 +13,27 @@ class BST:
     def __init__(self):
         self.root = None
 
-
     # insert
+    def insert(self, target_data):
+
+        new_node = Node(data)
+        if self.root is None:
+            self.root = new_node
+        current = self.node
+        parent = None
+        while True:
+            parent = current
+            if node.data < current.data:
+                current = current.left
+                if current is None:
+                    parent.left = new_node
+                    return
+            else:
+                current = current.right
+                if current is None:
+                    parent.right = new_node
+                    return
+
 
     # remove
 
