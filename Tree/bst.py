@@ -59,8 +59,14 @@ class BST:
 
 
     # remove
+    def remove(self, node):
+        pass
 
-    # traverse
+    # search
+    def inoder(self,data):
+        pass
+
+    # height
 
     def min(self):
         ''' Return the node with the minimum value in the Binary Search Tree
