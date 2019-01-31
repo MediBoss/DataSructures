@@ -30,3 +30,11 @@ less than or equal to the current node and the sub tree on the right is greater 
 current node.
 
 ## Operations
+
+  ### Insert
+  
+  ### remove
+  
+  ### Breadth First Search
+  
+  ### Depth First Search
