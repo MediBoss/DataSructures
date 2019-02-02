@@ -11,12 +11,12 @@ child(children) relationship.
 
 ## Key Terms
 
-* Degree:
-* Leaf of nodes:
-* Siblings:
-* Level:
-* Height:
-* Depth :
+* Degree: the number of subtrees of a given node.
+* Leaf of nodes: trees with a degree of 0. 
+* Siblings: Nodes that share a common parent.
+* Level: The number of connections from the root node.
+* Height: The number of levels there are in a tree.
+* Depth : number of edges from the root of the tree to that node.
 
 ## Binary Trees
 
@@ -33,7 +33,7 @@ current node.
 
   ### Insert
   
-  ### remove
+  ### Remove
   
   ### Breadth First Search
   
