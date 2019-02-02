@@ -1,3 +1,5 @@
+from collections import deque
+
 class Node:
     ''' Implement a Node'''
     def __init__(self, data):
@@ -82,14 +84,30 @@ class BST:
             self.preorder(current.left, data)
             self.preorder(current.right, data)
 
-def postorder(self, root_node, data):
-    ''' Traverse the Tree from right child to left child finishing with root'''
+    def postorder(self, root_node, data):
+        ''' Traverse the Tree from right child to left child finishing with root'''
 
     current = root_node
     if current:
         self.postorder(current.left)
         self.postorder(current.right)
         print(current.data)
+
+    def breadth_first_traversal(self):
+        list_of_nodes = []
+        traversal_queue = deque([self.root])
+
+        while len(traversal_queue) > 0:
+            node = traversal_queue.popleft()
+            list_of_nodes.append(node.data)
+
+            if node.left:
+                traversal_queue.append(node.left)
+            if node.right:
+                traversal_queue.append(node.right)
+
+        return list_of_nodes
+
 
     # height
 
