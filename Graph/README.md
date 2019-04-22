@@ -43,12 +43,12 @@ Graphs can be represented in two ways:
 In this representation, a graph is represented as a list where the index represent the vertex and its value(s) are its adjacent verteces.
 
 ![alt text](https://www.sanfoundry.com/wp-content/uploads/2017/08/data-structure-questions-answers-directed-graph-q8.png) 
-In this example, we can use the adjacency list representation as follow:
 
-[0] -> [B,D]
-[1] -> [C]
-[3] -> []
-[4] -> [E]
-[5] -> []
-* O represents vertex A, 1 represents vertex B, and so on.
+In this example, we can use the adjacency list representation as follow:
+* [0] -> [B,D]
+* [1] -> [C]
+* [3] -> []
+* [4] -> [E]
+* [5] -> []
+<i>NOTE : index O represents vertex A, 1 represents vertex B, and so on.</i>
 
