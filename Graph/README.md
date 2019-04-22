@@ -44,11 +44,10 @@ In this representation, a graph is represented as a list where the index represe
 
 ![alt text](https://www.sanfoundry.com/wp-content/uploads/2017/08/data-structure-questions-answers-directed-graph-q8.png) 
 
-In this example, we can use the adjacency list representation as follow:
+In this example, index O represents vertex A, 1 represents vertex B, and so on. we can use the adjacency list representation as follow:
 * [0] -> [B,D]
 * [1] -> [C]
 * [3] -> []
 * [4] -> [E]
 * [5] -> []
-<i>NOTE : index O represents vertex A, 1 represents vertex B, and so on.</i>
 
