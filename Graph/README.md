@@ -31,3 +31,4 @@ A weighted graph provides an extra information for the edges. This can be a nume
 
 In the example above, each number on the edge may represent the amount of time it takes to go from a vertex to another.
 
+
