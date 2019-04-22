@@ -14,6 +14,13 @@ A graph is a set of vertices and edges that form connections betweens the vertic
 
 ## Types of Graphs
 
-* Directed graphs : 
 
-* Undirected graphs : Those simply represent edges as lines between nodes. No additional information about the relationship about the nodes besides that they are connected.
+### Undirected graphs
+Those simply represent edges as lines between nodes. No additional information about the relationship about the nodes besides that they are connected.
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Undirected_graph.svg/1280px-Undirected_graph.svg.png)
+
+### Directed graphs
+
+In a directed graph, the edges provide orientation(shows direction with an arrow) in addition to connecting nodes.
+![alt text](https://computersciencewiki.org/images/c/c6/Directed_graph.png)
+
