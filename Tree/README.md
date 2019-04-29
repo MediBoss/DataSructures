@@ -16,7 +16,8 @@ child(children) relationship.
 * Siblings: Nodes that share a common parent.
 * Level: The number of connections from the root node.
 * Height: The number of levels there are in a tree.
-* Depth : number of edges from the root of the tree to that node.
+* Depth : The number of edges from the root to the longest child.
+* Size : The amount of nodes in the tree
 
 ## Binary Trees
 
@@ -28,6 +29,7 @@ They do not have any rule on how data is stored within the tree.
 BST are trees that requires to have a max of two children where the sub tree on the left is
 less than or equal to the current node and the sub tree on the right is greater than the
 current node.
+
 
 ## Operations
 
