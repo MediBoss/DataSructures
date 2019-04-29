@@ -19,6 +19,14 @@ child(children) relationship.
 * Depth : The number of edges from the root to the longest child.
 * Size : The amount of nodes in the tree
 
+
+## Why use A BST
+
+* Fast search, insertion, deletion - especially when balanced.
+* Sort as you go instead of all at once.
+* Fairly simple implementation for good performance.
+* Only allocates memory if its needed.
+
 ## Binary Trees
 
 Binary trees are types of trees that requires each node to have a maximum of two children.
