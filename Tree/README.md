@@ -18,6 +18,7 @@ child(children) relationship.
 * Height: The number of levels there are in a tree.
 * Depth : The number of edges from the root to the longest child.
 * Size : The amount of nodes in the tree
+* Branch : A node is a branch if it has at least one child.
 
 
 ## Why use A BST
