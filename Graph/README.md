@@ -14,6 +14,10 @@ A graph is a set of vertices and edges that form connections betweens the vertic
 
 ## Types of Graphs
 
+* Graph
+* Digraph
+* Wighted Digraph
+
 
 #### Undirected graphs
 
