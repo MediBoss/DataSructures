@@ -51,3 +51,7 @@ In this example, index O represents vertex A, 1 represents vertex B, and so on. 
 * [4] -> [E]
 * [5] -> []
 
+
+#### Adjacency Matrix
+In this representation, we use a 2d array where cells with value 1 means that there is a connection in (i,j) and cells with value 0 means that there aren't any connection.
+
