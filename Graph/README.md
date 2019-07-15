@@ -12,8 +12,8 @@ A graph is a set of vertices and edges that form connections betweens the vertic
 * Adjency : When two nodes are neighbor. Or when two nodes are connected directly(without an interim node in between).
 * Path : A sequence of vertices where each adjacent pair is connected by an edge.
 * Walk : A sequence of distinct connected edges.
-    -- * Open walk : origin is different from destination.
-    -- * Closed walk : origin is same as destination.
+    * Open walk : origin is different from destination.
+    * Closed walk : origin is same as destination.
     
 * Trail : A walk with distinct edges.
 * Path : An opened trail with no repeated verices.
