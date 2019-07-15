@@ -11,7 +11,7 @@ A graph is a set of vertices and edges that form connections betweens the vertic
 * Degree of a vertex : The number of vertices that are connected to to a certain node.
 * Adjency : When two nodes are neighbor. Or when two nodes are connected directly(without an interim node in between).
 * Path : A sequence of vertices where each adjacent pair is connected by an edge.
-* Walk : A sequence of distinct connected edges.
+* Walk : A sequence of connected edges that joins verteces.
     * Open walk : origin is different from destination.
     * Closed walk : origin is same as destination.
     
