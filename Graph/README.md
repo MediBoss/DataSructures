@@ -17,7 +17,8 @@ A graph is a set of vertices and edges that form connections betweens the vertic
     
 * Trail : A walk with distinct edges.
 * Path : An opened trail with no repeated verices.
-* Cycle : A closed trail where no other vertices are repeated apart from the start/end vertex
+* Cycle : A closed trail where no other vertices are repeated apart from the start/end vertex.
+* Diameter : 
 
 ## Types of Graphs
 
